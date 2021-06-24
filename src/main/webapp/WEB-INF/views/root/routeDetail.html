@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+        <script src="js/includeHTML.js"></script>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=966d6768ac3ef51f4e01a46f8ef2ab0d"></script>
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+   
+	    <style>
+			
+			
+			td {    
+				    font-size: .8rem;
+					color: #4f4f4f;
+					line-height: 1.7;
+					text-align: left;
+			
+					padding-bottom: 5px;
+				
+			}
+			
+			th {	
+				width: 110px;
+				font-size: .9rem;
+				color: rgba(79,79,79,0.6);
+				line-height: 1.7;
+				text-align: left;
+				vertical-align: top;
+				padding-right: 10px;
+				padding-bottom: 5px;
+
+			}
+		
+
+			.Restaurant_MenuList {
+    			
+				display: flex;
+				flex-direction : column;
+			}
+			
+			.Restaurant_MenuItem {
+				margin-right:20px;
+			}
+			
+			table {
+			
+				border-spacing: 2px;
+				border-color: grey; 
+				 
+		 		position: relative;
+				padding: 9px 15px 0 15px;
+			}
+			
+	
+			.bi-text {
+				margin : 10px;
+			}
+			
+			.map {
+				width : 70%;
+				height : 500px;
+				
+			}
+			
+  		</style>
+      
+	
+	</head>   
+<body>
+	
+	 <header include-html="header.html"></header>
+	<section class="blog-section spad">
+	<div class="container">
+            
+            <div class="row">
+
+ <div class="col-lg-4">
+				      
+                    <div class="section-title" style="display: flex;">
+                        <div id="title-name" style="flex:5;">
+                            <h4><span>1차</span><span>-음식점</span></h4>
+                        </div>
+                   
+                    </div>
+                    
+                        
+                        <div class="blog-item" OnClick="location.href ='./detail.html'" style="cursor:pointer;">
+                            <div class="bi-pic">
+                                <img src="img/blog/blog-2.jpg" alt="">
+                                <div class="bi-text">
+                                    <h4>을지다락</h4>
+                                    <p>파스타, 편안한, 오므라이스</p>
+                                    <ul>
+                                        <li>평점 <span>4.5</span></li>
+                                        <li>리뷰 <span>1500개</span></li>
+                                    </ul>
+                                </div>
+                                 <hr>
+	<div class = "simple_info">
+					
+<table class="info
+              no_menu
+              ">
+
+              <tbody>
+                <tr class="only-desktop">
+                  <th>주소</th>
+                  <td>서울특별시 중구 수표로10길 19 4F<br>
+                        <span class="Restaurant__InfoAddress--Rectangle">지번</span>
+                      <span class="Restaurant__InfoAddress--Text">서울시 중구 초동 156-9 4F</span>
+                  </td>
+                </tr>
+                <tr class="only-desktop">
+                  <th>전화번호</th>
+                  <td>070-8844-4484</td>
+                </tr>
+                <tr>
+                  <th>음식 종류</th>
+                  <td>
+                    <span>이탈리안</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>가격대</th>
+                  <td>만원-2만원</td>
+                </tr>
+                <tr>
+                  <th>주차</th>
+                  <td>주차공간없음 </td>
+                </tr>
+                <tr>
+                  <th style="vertical-align:top;">영업시간</th>
+                  <td>월-금: 11:30 - 22:00<br> 토: 11:30 - 21:30<br> 일: 11:30 - 20:30</td>
+                </tr>
+                <tr>
+                  <th style="vertical-align:top;">쉬는시간</th>
+                  <td>15:00 - 17:00</td>
+                </tr>
+                <tr>
+                  <th>메뉴</th>
+                  <td class="menu_td">
+                    <ul class="Restaurant_MenuList">
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">다락오무라이스</span>
+                            <span class="Restaurant_MenuPrice">14,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">매콤크림스파게티</span>
+                            <span class="Restaurant_MenuPrice">15,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">다락뇨끼</span>
+                            <span class="Restaurant_MenuPrice">16,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">가츠산도</span>
+                            <span class="Restaurant_MenuPrice">10,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">해산물 오일스파게티</span>
+                            <span class="Restaurant_MenuPrice">16,000원</span>
+                        </li>
+                    </ul>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>				
+
+								</div>	
+                            </div>
+                        </div>
+
+                      
+                </div>
+
+                <!-- 2차  -->
+               <div class="col-lg-4">
+				      
+                    <div class="section-title" style="display: flex;">
+                        <div id="title-name" style="flex:5;">
+                            <h4><span>2차</span><span>-카페</span></h4>
+                        </div>
+                   
+                    </div>
+                    
+                        
+                        <div class="blog-item" OnClick="location.href ='./detail.html'" style="cursor:pointer;">
+                            <div class="bi-pic">
+                                <img src="img/blog/blog-2.jpg" alt="">
+                                <div class="bi-text">
+                                    <h4>분카샤</h4><!--힙플레이스 이름-->
+                                    <p>후르츠산도, 편안한, 커피</p><!--태그-->
+                                    <ul>
+                                        <li>평점 <span>4.5</span></li>
+                                        <li>리뷰 <span>1500개</span></li>
+                                    </ul>
+                                </div>
+                                 <hr>
+	<div class = "simple_info">
+					
+<table class="info
+              no_menu
+              ">
+
+              <tbody>
+                <tr class="only-desktop">
+                  <th>주소</th>
+                  <td>서울특별시 중구 수표로10길 19 4F<br>
+                        <span class="Restaurant__InfoAddress--Rectangle">지번</span>
+                      <span class="Restaurant__InfoAddress--Text">서울시 중구 초동 156-9 4F</span>
+                  </td>
+                </tr>
+                <tr class="only-desktop">
+                  <th>전화번호</th>
+                  <td>070-8844-4484</td>
+                </tr>
+                <tr>
+                  <th>음식 종류</th>
+                  <td>
+                    <span>이탈리안</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>가격대</th>
+                  <td>만원-2만원</td>
+                </tr>
+                <tr>
+                  <th>주차</th>
+                  <td>주차공간있음 </td>
+                </tr>
+                <tr>
+                  <th style="vertical-align:top;">영업시간</th>
+                  <td>월-금: 11:30 - 22:00<br> 토: 11:30 - 21:30<br> 일: 11:30 - 20:30</td>
+                </tr>
+                <tr>
+                  <th style="vertical-align:top;">쉬는시간</th>
+                  <td>15:00 - 17:00</td>
+                </tr>
+                <tr>
+                  <th>메뉴</th>
+                  <td class="menu_td">
+                    <ul class="Restaurant_MenuList">
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">다락오무라이스</span>
+                            <span class="Restaurant_MenuPrice">14,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">매콤크림스파게티</span>
+                            <span class="Restaurant_MenuPrice">15,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">다락뇨끼</span>
+                            <span class="Restaurant_MenuPrice">16,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">가츠산도</span>
+                            <span class="Restaurant_MenuPrice">10,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">해산물 오일스파게티</span>
+                            <span class="Restaurant_MenuPrice">16,000원</span>
+                        </li>
+                    </ul>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>				
+
+								</div>	
+                            </div>
+                        </div>
+
+                      
+                </div>
+
+
+                <!-- 3차  -->
+        <div class="col-lg-4">
+                    <div class="section-title" style="display: flex;">
+                        <div id="title-name" style="flex:5;">
+                           <h4><span>3차</span><span>-술집</span></h4>
+                        </div>
+                   
+                    </div>
+                    
+                        
+                        <div class="blog-item" OnClick="location.href ='./detail.html'" style="cursor:pointer;">
+                            <div class="bi-pic">
+                                <img src="img/blog/blog-2.jpg" alt="">
+                                <div class="bi-text">
+                                    <h4>만선호프</h4><!--힙플레이스 이름-->
+                                    <p>맥주, 노가리, 야외</p><!--태그-->
+                                    <ul>
+                                        <li>평점 <span>4.5</span></li>
+                                        <li>리뷰 <span>1500개</span></li>
+                                    </ul>
+                                </div>
+                                 <hr>
+	<div class = "simple_info">
+					
+<table class="info no_menu">
+
+              <tbody>
+                <tr class="only-desktop">
+                  <th>주소</th>
+                  <td>서울특별시 중구 수표로10길 19 4F<br>
+                        <span class="Restaurant__InfoAddress--Rectangle">지번</span>
+                      <span class="Restaurant__InfoAddress--Text">서울시 중구 초동 156-9 4F</span>
+                  </td>
+                </tr>
+                <tr class="only-desktop">
+                  <th>전화번호</th>
+                  <td>070-8844-4484</td>
+                </tr>
+                <tr>
+                  <th>음식 종류</th>
+                  <td>
+                    <span>이탈리안</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>가격대</th>
+                  <td>만원-2만원</td>
+                </tr>
+                <tr>
+                  <th>주차</th>
+                  <td>주차공간없음 </td>
+                </tr>
+                <tr>
+                  <th style="vertical-align:top;">영업시간</th>
+                  <td>월-금: 11:30 - 22:00<br> 토: 11:30 - 21:30<br> 일: 11:30 - 20:30</td>
+                </tr>
+                <tr>
+                  <th style="vertical-align:top;">쉬는시간</th>
+                  <td>15:00 - 17:00</td>
+                </tr>
+                <tr>
+                  <th>메뉴</th>
+                  <td class="menu_td">
+                    <ul class="Restaurant_MenuList">
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">다락오무라이스</span>
+                            <span class="Restaurant_MenuPrice">14,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">매콤크림스파게티</span>
+                            <span class="Restaurant_MenuPrice">15,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">다락뇨끼</span>
+                            <span class="Restaurant_MenuPrice">16,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">가츠산도</span>
+                            <span class="Restaurant_MenuPrice">10,000원</span>
+                        </li>
+                        <li class="Restaurant_MenuItem">
+                          <span class="Restaurant_Menu">해산물 오일스파게티</span>
+                            <span class="Restaurant_MenuPrice">16,000원</span>
+                        </li>
+                    </ul>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>				
+
+								</div>	
+                            </div>
+                        </div>
+                      
+                </div>
+
+
+                
+            </div>
+		<br><br>
+		<div class="pd-widget">
+			  <div class="section-title" style="display: flex;">
+                        <div id="title-name" style="flex:5;">
+                            <h4><span>가게 별 위치</span></h4>
+                        </div>
+                   
+                    </div>
+			<br>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735515.5813275519!2d-80.41163541934742!3d43.93644386501528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882a55bbf3de23d7%3A0x3ada5af229b47375!2sMono%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1583262687289!5m2!1sen!2sbd" width = 100% height = "500px" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                      
+                    </div>
+        </div>	
+	
+	</section>
+	 <!-- Footer Section Begin -->
+	    <footer include-html="footer.html"></footer>
+    
+    <script>
+        includeHTML();
+    </script>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.richtext.min.js"></script>
+    <script src="js/image-uploader.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

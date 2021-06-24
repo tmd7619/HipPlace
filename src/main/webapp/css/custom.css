@@ -1,0 +1,25 @@
+.search-form-content .filter-form input {
+    width: 80%;
+    height: 46px;
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+    color: #ffffff;
+    padding-left: 20px;
+    font-weight: 500;
+  }
+
+  .search-form-content .filter-form #mainButton {
+  font-size: 14px;
+  height: 46px;
+  background: #d41800;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 19%; 
+  }
+
+  
+
+  
