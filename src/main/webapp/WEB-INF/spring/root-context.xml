@@ -25,5 +25,5 @@
 		<constructor-arg name="sqlSessionFactory" ref="SqlSessionFactory"></constructor-arg>
 	</bean>
 	
-	<mybatis-spring:scan base-package="kr.ac.kopo.dao" />
+	<mybatis-spring:scan base-package="kr.ac.kopo.mapper" />
 </beans>

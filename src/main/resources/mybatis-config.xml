@@ -9,6 +9,6 @@
    
 	<!-- Mapper.xml 파일들 설정 -->
 	<mappers>
-	  <mapper resource="mapper/placeMapper.xml"/>
+	  <mapper resource="mapper/PlaceMapper.xml"/>
    </mappers>
 </configuration>
