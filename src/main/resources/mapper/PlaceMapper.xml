@@ -2,5 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 <mapper namespace="kr.ac.kopo.mapper.PlaceMapper">
 		
+	<!-- 힙플레이스 목록 조회 -->
+	<select id="selectPlaceList" resultType="PlaceVO">
 	
+	</select>
+	
+	<!-- 힙플레이스 조회 -->
+	<select id="selectPlace" parameterType="int" resultType="PlaceVO">
+	
+	</select>
+	
+	<!-- 힙플레이스 등록 -->
+	<select id="insertPlace" parameterType="PlaceVO">
+	
+	</select>
 </mapper>

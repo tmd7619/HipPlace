@@ -13,18 +13,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/richtext.min.css" type="text/css">
-    <link rel="stylesheet" href="css/image-uploader.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/richtext.min.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/image-uploader.min.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/custom.css" type="text/css">
 </head>
 <div id="preloder">
     <div class="loader"></div>
@@ -38,7 +38,7 @@
     </div>
     <div class="logo">
         <a href="./index.html">
-            <img src="img/logo2.png" alt="">
+            <img src="${pageContext.request.contextPath}/img/logo2.png" alt="">
         </a>
     </div>
     <div id="mobile-menu-wrap"></div>
@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="logo">
-                        <a href="./index.html"><img src="img/logo2.png" alt=""></a>
+                        <a href="./index.html"><img src="${pageContext.request.contextPath}/img/logo2.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -90,7 +90,7 @@
                             <li class="active"><a href="#">힙플레이스</a>
                                 <ul class="dropdown">
                                     <li><a href="./table.html">힙플레이스 목록</a></li>
-                                    <li><a href="./registerPage.html">힙플레이스 추가</a></li>
+                                    <li><a href="place/write.do">힙플레이스 추가</a></li>
                                     <li><a href="./table.html">힙플레이스 후기 목록</a></li>
                                 </ul>
                             </li>
