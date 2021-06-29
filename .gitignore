@@ -1,3 +1,4 @@
+
 # Created by https://www.gitignore.io/api/git,java,maven,windows,eclipse
 # Edit at https://www.gitignore.io/?templates=git,java,maven,windows,eclipse
 
@@ -5,7 +6,7 @@
 .metadata
 bin/
 tmp/
-*.tmp
+*.tmps
 *.bak
 *.swp
 *~.nib
@@ -13,6 +14,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+
 .target/
 
 # ignore properties file
@@ -56,12 +58,25 @@ config.properties
 
 # Annotation Processing
 .apt_generated/
+.apt_generated_test/
 
 # Scala IDE specific (Scala & Java development for Eclipse)
 .cache-main
 .scala_dependencies
 .worksheet
 
+
+# Uncomment this line if you wish to ignore the project description file.
+# Typically, this file would be tracked if it contains build/dependency configurations:
+#.project
+
+### Eclipse Patch ###
+# Spring Boot Tooling
+.sts4-cache/
+
+### Java-Web ###
+## ignoring target file
+target/
 ### Eclipse Patch ###
 # Eclipse Core
 .project
