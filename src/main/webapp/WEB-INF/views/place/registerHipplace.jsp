@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
-<header include-html="header.html"></header>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:include page="/WEB-INF/views/common/header.jsp"/>
 <body>
-    <section class="breadcrumb-section spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+	
+	<section class="breadcrumb-section spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -75,24 +75,7 @@
             </div>
         </div>
     </section>
-    <footer include-html="footer.html"></footer>
-    
-    
-    <script>
-        includeHTML();
-    </script>
-    <!-- Js Plugins -->
-   
+	
+	<jsp:include page="/WEB-INF/views/common/footer.jsp"/>
 </body>
-<script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.richtext.min.js"></script>
-    <script src="js/image-uploader.min.js"></script>
-    <script src="js/main.js"></script>
 </html>
