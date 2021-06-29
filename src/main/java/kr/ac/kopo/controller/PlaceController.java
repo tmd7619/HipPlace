@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class PlaceController {
 	
-	@RequestMapping("/index")
+	@RequestMapping("")
 	public String main() {
-		return "index";
+		return "placeList";
 		
 	}
 	
